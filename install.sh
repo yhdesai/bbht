@@ -1,22 +1,20 @@
 #!/bin/bash
-sudo apt-get -y update
-sudo apt-get -y upgrade
 
 
-sudo apt-get install -y libcurl4-openssl-dev
-sudo apt-get install -y libssl-dev
-sudo apt-get install -y jq
-sudo apt-get install -y ruby-full
-sudo apt-get install -y libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev build-essential libgmp-dev zlib1g-dev
-sudo apt-get install -y build-essential libssl-dev libffi-dev python-dev
-sudo apt-get install -y python-setuptools
-sudo apt-get install -y libldns-dev
-sudo apt-get install -y python3-pip
-sudo apt-get install -y python-pip
-sudo apt-get install -y python-dnspython
-sudo apt-get install -y git
-sudo apt-get install -y rename
-sudo apt-get install -y xargs
+yay -S libcurl4-openssl-dev
+yay -S  libssl-dev
+yay -S  jq
+yay -S  ruby-full
+yay -S libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev build-essential libgmp-dev zlib1g-dev
+yay -S  build-essential libssl-dev libffi-dev python-dev
+yay -S  python-setuptools
+yay -S libldns-dev
+yay -S  python3-pip
+yay -S  python-pip
+yay -S python-dnspython
+yay -S  git
+yay -S rename
+yay -S xargs
 
 echo "installing bash_profile aliases from recon_profile"
 git clone https://github.com/nahamsec/recon_profile.git
@@ -143,7 +141,7 @@ cd ~/tools/
 echo "done"
 
 echo "installing nmap"
-sudo apt-get install -y nmap
+yay -S  nmap
 echo "done"
 
 echo "installing massdns"
